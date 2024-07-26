@@ -1,0 +1,562 @@
+[
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class implements \"PHPUnit\\Framework\\TestListener\" that is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListenerPHPUnit7",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class uses \"PHPUnit\\Framework\\TestListenerDefaultImplementation\" that is deprecated The `TestListener` interface is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListener",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class implements \"PHPUnit\\Framework\\TestListener\" that is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Test\\CiviTestListener",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class uses \"PHPUnit\\Framework\\TestListenerDefaultImplementation\" that is deprecated The `TestListener` interface is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_System_UnitTests",
+        "message": "The \"CRM_Utils_System_Base::isLoaded()\" method is considered internal. It may change without further notice. You should not extend it from \"CRM_Utils_System_UnitTests\".",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_System_UnitTests",
+        "message": "Method \"CRM_Utils_System_Base::authenticate()\" might add \"array|bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Utils_System_UnitTests\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_System_UnitTests",
+        "message": "Method \"CRM_Utils_System_Base::cmsRootPath()\" might add \"?string\" as a native return type declaration in the future. Do the same in child class \"CRM_Utils_System_UnitTests\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_System_UnitTests",
+        "message": "Method \"CRM_Utils_System_Base::postURL()\" might add \"string\" as a native return type declaration in the future. Do the same in child class \"CRM_Utils_System_UnitTests\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_System_UnitTests",
+        "message": "Method \"CRM_Utils_System_Base::url()\" might add \"string\" as a native return type declaration in the future. Do the same in child class \"CRM_Utils_System_UnitTests\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_System_UnitTests",
+        "message": "Method \"CRM_Utils_System_Base::getLoginURL()\" might add \"string\" as a native return type declaration in the future. Do the same in child class \"CRM_Utils_System_UnitTests\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_SqlGroup",
+        "message": "Method \"CRM_Utils_Cache_Interface::has()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_SqlGroup\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_SqlGroup",
+        "message": "Method \"CRM_Utils_Cache_Interface::flush()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_SqlGroup\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_SqlGroup",
+        "message": "Method \"CRM_Utils_Cache_Interface::clear()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_SqlGroup\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_CacheWrapper",
+        "message": "Method \"Psr\\SimpleCache\\CacheInterface::getMultiple()\" might add \"iterable\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_CacheWrapper\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_CacheWrapper",
+        "message": "Method \"Psr\\SimpleCache\\CacheInterface::setMultiple()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_CacheWrapper\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_CacheWrapper",
+        "message": "Method \"Psr\\SimpleCache\\CacheInterface::deleteMultiple()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_CacheWrapper\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_CacheWrapper",
+        "message": "Method \"CRM_Utils_Cache_Interface::set()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_CacheWrapper\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_CacheWrapper",
+        "message": "Method \"CRM_Utils_Cache_Interface::get()\" might add \"mixed\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_CacheWrapper\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_CacheWrapper",
+        "message": "Method \"CRM_Utils_Cache_Interface::delete()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_CacheWrapper\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_CacheWrapper",
+        "message": "Method \"CRM_Utils_Cache_Interface::clear()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_CacheWrapper\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_CacheWrapper",
+        "message": "Method \"CRM_Utils_Cache_Interface::has()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_CacheWrapper\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_ArrayCache",
+        "message": "Method \"CRM_Utils_Cache_Interface::flush()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_ArrayCache\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_ArrayCache",
+        "message": "Method \"CRM_Utils_Cache_Interface::clear()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_ArrayCache\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_Cache_ArrayCache",
+        "message": "Method \"CRM_Utils_Cache_Interface::has()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_Cache_ArrayCache\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_DAO_Base",
+        "message": "Method \"CRM_Core_DAO::getEntityTitle()\" might add \"string\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_DAO_Base\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_DAO_Base",
+        "message": "Method \"CRM_Core_DAO::getTableName()\" might add \"string\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_DAO_Base\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_DAO_Base",
+        "message": "Method \"CRM_Core_DAO::fields()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_DAO_Base\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Core\\Compiler\\AutoServiceScannerPass",
+        "message": "Method \"Symfony\\Component\\DependencyInjection\\Compiler\\CompilerPassInterface::process()\" might add \"void\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Core\\Compiler\\AutoServiceScannerPass\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Core\\Compiler\\EventScannerPass",
+        "message": "Method \"Symfony\\Component\\DependencyInjection\\Compiler\\CompilerPassInterface::process()\" might add \"void\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Core\\Compiler\\EventScannerPass\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Core\\Compiler\\SpecProviderPass",
+        "message": "Method \"Symfony\\Component\\DependencyInjection\\Compiler\\CompilerPassInterface::process()\" might add \"void\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Core\\Compiler\\SpecProviderPass\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Activity_BAO_ActivityContact",
+        "message": "The \"CRM_Activity_BAO_ActivityContact::links()\" method will require a new \"array $new_links\" argument in the next major version of its parent class \"DB_DataObject\", not defining it is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Batch_BAO_Batch",
+        "message": "The \"CRM_Batch_BAO_Batch::links()\" method will require a new \"array $new_links\" argument in the next major version of its parent class \"DB_DataObject\", not defining it is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Contact_BAO_Relationship",
+        "message": "Method \"CRM_Core_DAO::buildOptions()\" might add \"array|bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Contact_BAO_Relationship\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Contribute_BAO_ContributionRecur",
+        "message": "Method \"CRM_Core_DAO::buildOptions()\" might add \"array|bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Contribute_BAO_ContributionRecur\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_BAO_CustomField",
+        "message": "Method \"CRM_Core_DAO::buildOptions()\" might add \"array|bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_BAO_CustomField\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_BAO_CustomGroup",
+        "message": "Method \"CRM_Core_DAO::buildOptions()\" might add \"array|bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_BAO_CustomGroup\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_BAO_Discount",
+        "message": "Method \"CRM_Core_DAO::buildOptions()\" might add \"array|bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_BAO_Discount\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_BAO_RecurringEntity",
+        "message": "Method \"Symfony\\Component\\EventDispatcher\\EventSubscriberInterface::getSubscribedEvents()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Core_BAO_RecurringEntity\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Activity_ActionMapping",
+        "message": "Method \"Civi\\ActionSchedule\\MappingInterface::getId()\" might add \"string|int\" as a native return type declaration in the future. Do the same in implementation \"CRM_Activity_ActionMapping\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Token\\AbstractTokenSubscriber",
+        "message": "Method \"Symfony\\Component\\EventDispatcher\\EventSubscriberInterface::getSubscribedEvents()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Token\\AbstractTokenSubscriber\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Activity_Tokens",
+        "message": "Method \"CRM_Core_EntityTokens::getActiveTokens()\" might add \"mixed\" as a native return type declaration in the future. Do the same in child class \"CRM_Activity_Tokens\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Campaign_Info",
+        "message": "Method \"CRM_Core_Component_Info::getActivityTypes()\" might add \"?array\" as a native return type declaration in the future. Do the same in child class \"CRM_Campaign_Info\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Case_Info",
+        "message": "Method \"CRM_Core_Component_Info::getReferenceCounts()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"CRM_Case_Info\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Contact_ActionMapping",
+        "message": "Method \"Civi\\ActionSchedule\\MappingInterface::getId()\" might add \"string|int\" as a native return type declaration in the future. Do the same in implementation \"CRM_Contact_ActionMapping\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Cxn_CiviCxnStore",
+        "message": "Method \"Civi\\Cxn\\Rpc\\CxnStore\\CxnStoreInterface::getAll()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Cxn_CiviCxnStore\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Cxn_CiviCxnStore",
+        "message": "Method \"Civi\\Cxn\\Rpc\\CxnStore\\CxnStoreInterface::getByCxnId()\" might add \"?array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Cxn_CiviCxnStore\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Cxn_CiviCxnStore",
+        "message": "Method \"Civi\\Cxn\\Rpc\\CxnStore\\CxnStoreInterface::getByAppId()\" might add \"?array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Cxn_CiviCxnStore\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "HTML_QuickForm_Page",
+        "message": "Method \"HTML_QuickForm::exportValues()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"HTML_QuickForm_Page\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Logging_ReportDetail",
+        "message": "Method \"CRM_Report_Form::buildQuery()\" might add \"string\" as a native return type declaration in the future. Do the same in child class \"CRM_Logging_ReportDetail\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Logging_ReportDetail",
+        "message": "Method \"CRM_Report_Form::limit()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"CRM_Logging_ReportDetail\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Mailing_ActionTokens",
+        "message": "Method \"Civi\\Token\\AbstractTokenSubscriber::checkActive()\" might add \"bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Mailing_ActionTokens\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Mailing_Tokens",
+        "message": "Method \"Civi\\Token\\AbstractTokenSubscriber::checkActive()\" might add \"bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Mailing_Tokens\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Member_ActionMapping",
+        "message": "Method \"Civi\\ActionSchedule\\MappingInterface::getId()\" might add \"string|int\" as a native return type declaration in the future. Do the same in implementation \"CRM_Member_ActionMapping\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Payment_Dummy",
+        "message": "Method \"CRM_Core_Payment::doRefund()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Payment_Dummy\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Payment_Manual",
+        "message": "Method \"CRM_Core_Payment::checkConfig()\" might add \"string\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Payment_Manual\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Payment_Manual",
+        "message": "Method \"CRM_Core_Payment::supportsNoEmailProvided()\" might add \"bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Payment_Manual\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Permission_DrupalBase",
+        "message": "Method \"CRM_Core_Permission_Base::isModulePermissionSupported()\" might add \"bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Permission_DrupalBase\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Permission_Backdrop",
+        "message": "Method \"CRM_Core_Permission_Base::getAvailablePermissions()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Permission_Backdrop\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Permission_Backdrop",
+        "message": "Method \"CRM_Core_Permission_Base::isModulePermissionSupported()\" might add \"bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Permission_Backdrop\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Permission_Drupal",
+        "message": "Method \"CRM_Core_Permission_Base::getAvailablePermissions()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Permission_Drupal\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Permission_Drupal",
+        "message": "Method \"CRM_Core_Permission_Base::isModulePermissionSupported()\" might add \"bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Permission_Drupal\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Permission_Joomla",
+        "message": "Method \"CRM_Core_Permission_Base::isModulePermissionSupported()\" might add \"bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Permission_Joomla\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Permission_Standalone",
+        "message": "Method \"CRM_Core_Permission_Base::getAvailablePermissions()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Permission_Standalone\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Permission_WordPress",
+        "message": "Method \"CRM_Core_Permission_Base::getAvailablePermissions()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Permission_WordPress\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_Permission_WordPress",
+        "message": "Method \"CRM_Core_Permission_Base::isModulePermissionSupported()\" might add \"bool\" as a native return type declaration in the future. Do the same in child class \"CRM_Core_Permission_WordPress\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_PrevNextCache_Redis",
+        "message": "Method \"CRM_Core_PrevNextCache_Interface::fillWithSql()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Core_PrevNextCache_Redis\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_PrevNextCache_Redis",
+        "message": "Method \"CRM_Core_PrevNextCache_Interface::fillWithArray()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Core_PrevNextCache_Redis\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_PrevNextCache_Redis",
+        "message": "Method \"CRM_Core_PrevNextCache_Interface::fetch()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Core_PrevNextCache_Redis\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_PrevNextCache_Redis",
+        "message": "Method \"CRM_Core_PrevNextCache_Interface::getSelection()\" might add \"?array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Core_PrevNextCache_Redis\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_PrevNextCache_Redis",
+        "message": "Method \"CRM_Core_PrevNextCache_Interface::getPositions()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Core_PrevNextCache_Redis\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_PrevNextCache_Redis",
+        "message": "Method \"CRM_Core_PrevNextCache_Interface::getCount()\" might add \"int\" as a native return type declaration in the future. Do the same in implementation \"CRM_Core_PrevNextCache_Redis\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Core_PrevNextCache_Sql",
+        "message": "Method \"CRM_Core_PrevNextCache_Interface::fillWithArray()\" might add \"bool\" as a native return type declaration in the future. Do the same in implementation \"CRM_Core_PrevNextCache_Sql\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Dedupe_BAO_Rule",
+        "message": "The \"CRM_Dedupe_BAO_DedupeRule::validateContacts()\" method is considered internal do not call from outside tested core code. No universe uses Feb 2024. It may change without further notice. You should not extend it from \"CRM_Dedupe_BAO_Rule\".",
+        "count": 1
+    },
+    {
+        "location": "CRM_Dedupe_BAO_Rule",
+        "message": "The \"CRM_Dedupe_BAO_DedupeRule::dedupeRuleFields()\" method is considered internal do not call from outside tested core code. No universe uses Feb 2024. It may change without further notice. You should not extend it from \"CRM_Dedupe_BAO_Rule\".",
+        "count": 1
+    },
+    {
+        "location": "CRM_Event_ActionMapping_ByEvent",
+        "message": "Method \"Civi\\ActionSchedule\\MappingInterface::getId()\" might add \"string|int\" as a native return type declaration in the future. Do the same in implementation \"CRM_Event_ActionMapping_ByEvent\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Event_ActionMapping_ByTemplate",
+        "message": "Method \"Civi\\ActionSchedule\\MappingInterface::getId()\" might add \"string|int\" as a native return type declaration in the future. Do the same in implementation \"CRM_Event_ActionMapping_ByTemplate\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Event_ActionMapping_ByType",
+        "message": "Method \"Civi\\ActionSchedule\\MappingInterface::getId()\" might add \"string|int\" as a native return type declaration in the future. Do the same in implementation \"CRM_Event_ActionMapping_ByType\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Mailing_Service_ListUnsubscribe",
+        "message": "Method \"Symfony\\Component\\EventDispatcher\\EventSubscriberInterface::getSubscribedEvents()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Mailing_Service_ListUnsubscribe\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Queue_Queue_SqlParallel",
+        "message": "Method \"CRM_Queue_Queue::claimItem()\" might add \"object\" as a native return type declaration in the future. Do the same in child class \"CRM_Queue_Queue_SqlParallel\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Activity_Import_Parser_Activity",
+        "message": "Method \"CRM_Import_Parser::init()\" might add \"void\" as a native return type declaration in the future. Do the same in child class \"CRM_Activity_Import_Parser_Activity\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Contact_Import_Parser_Contact",
+        "message": "Method \"CRM_Import_Parser::init()\" might add \"void\" as a native return type declaration in the future. Do the same in child class \"CRM_Contact_Import_Parser_Contact\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Contribute_Import_Parser_Contribution",
+        "message": "Method \"CRM_Import_Parser::init()\" might add \"void\" as a native return type declaration in the future. Do the same in child class \"CRM_Contribute_Import_Parser_Contribution\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Event_Import_Parser_Participant",
+        "message": "Method \"CRM_Import_Parser::init()\" might add \"void\" as a native return type declaration in the future. Do the same in child class \"CRM_Event_Import_Parser_Participant\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Financial_BAO_ExportFormat_CSV",
+        "message": "Method \"CRM_Financial_BAO_ExportFormat::export()\" might add \"mixed\" as a native return type declaration in the future. Do the same in child class \"CRM_Financial_BAO_ExportFormat_CSV\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Financial_BAO_ExportFormat_IIF",
+        "message": "Method \"CRM_Financial_BAO_ExportFormat::export()\" might add \"mixed\" as a native return type declaration in the future. Do the same in child class \"CRM_Financial_BAO_ExportFormat_IIF\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Core\\MetadataFlush",
+        "message": "Method \"Symfony\\Component\\EventDispatcher\\EventSubscriberInterface::getSubscribedEvents()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Core\\MetadataFlush\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Core\\Url",
+        "message": "Method \"JsonSerializable::jsonSerialize()\" might add \"mixed\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Core\\Url\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Managed\\MultisiteManaged",
+        "message": "Method \"Symfony\\Component\\EventDispatcher\\EventSubscriberInterface::getSubscribedEvents()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Managed\\MultisiteManaged\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Token\\ImpliedContextSubscriber",
+        "message": "Method \"Symfony\\Component\\EventDispatcher\\EventSubscriberInterface::getSubscribedEvents()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Token\\ImpliedContextSubscriber\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\WorkflowMessage\\TestBanner",
+        "message": "Method \"Symfony\\Component\\EventDispatcher\\EventSubscriberInterface::getSubscribedEvents()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"Civi\\WorkflowMessage\\TestBanner\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Api4\\Generic\\AbstractAction",
+        "message": "Method \"ArrayAccess::offsetGet()\" might add \"mixed\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Api4\\Generic\\AbstractAction\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Api4\\Service\\Autocomplete\\EventAutocompleteProvider",
+        "message": "Method \"Symfony\\Component\\EventDispatcher\\EventSubscriberInterface::getSubscribedEvents()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Api4\\Service\\Autocomplete\\EventAutocompleteProvider\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Api4\\Service\\Spec\\RequestSpec",
+        "message": "Method \"Iterator::rewind()\" might add \"void\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Api4\\Service\\Spec\\RequestSpec\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Api4\\Service\\Spec\\RequestSpec",
+        "message": "Method \"Iterator::current()\" might add \"mixed\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Api4\\Service\\Spec\\RequestSpec\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Api4\\Service\\Spec\\RequestSpec",
+        "message": "Method \"Iterator::key()\" might add \"mixed\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Api4\\Service\\Spec\\RequestSpec\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Api4\\Service\\Spec\\SpecGatherer",
+        "message": "Method \"Symfony\\Component\\EventDispatcher\\EventSubscriberInterface::getSubscribedEvents()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Api4\\Service\\Spec\\SpecGatherer\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Extension_Upgrader_Base",
+        "message": "Method \"CRM_Extension_Upgrader_Interface::notify()\" might add \"mixed\" as a native return type declaration in the future. Do the same in implementation \"CRM_Extension_Upgrader_Base\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_API_AbstractFieldCoder",
+        "message": "Method \"API_Wrapper::fromApiInput()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_API_AbstractFieldCoder\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_API_AbstractFieldCoder",
+        "message": "Method \"API_Wrapper::toApiOutput()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_API_AbstractFieldCoder\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_API_HTMLInputCoder",
+        "message": "Method \"CRM_Utils_API_AbstractFieldCoder::decodeOutput()\" might add \"mixed\" as a native return type declaration in the future. Do the same in child class \"CRM_Utils_API_HTMLInputCoder\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_API_NullOutputCoder",
+        "message": "Method \"CRM_Utils_API_AbstractFieldCoder::decodeOutput()\" might add \"mixed\" as a native return type declaration in the future. Do the same in child class \"CRM_Utils_API_NullOutputCoder\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_API_ReloadOption",
+        "message": "Method \"API_Wrapper::fromApiInput()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_API_ReloadOption\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_API_ReloadOption",
+        "message": "Method \"API_Wrapper::toApiOutput()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_API_ReloadOption\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_API_MatchOption",
+        "message": "Method \"API_Wrapper::fromApiInput()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_API_MatchOption\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_API_MatchOption",
+        "message": "Method \"API_Wrapper::toApiOutput()\" might add \"array\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_API_MatchOption\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_LazyArray",
+        "message": "Method \"ArrayAccess::offsetGet()\" might add \"mixed\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_LazyArray\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "CRM_Utils_LazyArray",
+        "message": "Method \"IteratorAggregate::getIterator()\" might add \"\\Traversable\" as a native return type declaration in the future. Do the same in implementation \"CRM_Utils_LazyArray\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "civi\\test\\civitestlistener",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class implements \"PHPUnit\\Framework\\TestListener\" that is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "civi\\test\\civitestlistener",
+        "message": "The \"Civi\\Test\\CiviTestListenerPHPUnit7\" class uses \"PHPUnit\\Framework\\TestListenerDefaultImplementation\" that is deprecated The `TestListener` interface is deprecated.",
+        "count": 1
+    },
+    {
+        "location": "HTML_QuickForm_Rule_Email",
+        "message": "Method \"HTML_QuickForm_Rule::getValidationScript()\" might add \"array\" as a native return type declaration in the future. Do the same in child class \"HTML_QuickForm_Rule_Email\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Identitytracker\\CompilerPass",
+        "message": "Method \"Symfony\\Component\\DependencyInjection\\Compiler\\CompilerPassInterface::process()\" might add \"void\" as a native return type declaration in the future. Do the same in implementation \"Civi\\Identitytracker\\CompilerPass\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    },
+    {
+        "location": "Civi\\Token\\TokenRowIterator",
+        "message": "Method \"IteratorIterator::current()\" might add \"mixed\" as a native return type declaration in the future. Do the same in child class \"Civi\\Token\\TokenRowIterator\" now to avoid errors or add an explicit @return annotation to suppress this message.",
+        "count": 1
+    }
+]

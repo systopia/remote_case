@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<extension key="remote_case" type="module">
+  <file>remote_case</file>
+  <name>CiviRemote Case</name>
+  <description>Exposes CiviCRM cases via the CiviRemote framework.</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>SYSTOPIA</author>
+    <email>info@systopia.de</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/systopia/remote_case</url>
+    <url desc="Documentation">https://github.com/systopia/remote_case</url>
+    <url desc="Support">https://github.com/systopia/remote_case</url>
+    <url desc="Licensing">https://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate/>
+  <version>0.1-dev</version>
+  <develStage>dev</develStage>
+  <compatibility>
+    <ver>5.75</ver>
+  </compatibility>
+  <requires>
+    <ext>civi_case</ext>
+    <ext>de.systopia.remotetools</ext>
+  </requires>
+  <comments/>
+  <classloader>
+    <psr0 prefix="CRM_" path="."/>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/RemoteCase</namespace>
+    <format>23.02.1</format>
+    <angularModule>crmRemoteCase</angularModule>
+  </civix>
+  <mixins>
+  </mixins>
+</extension>
