@@ -44,10 +44,10 @@ jobs:
     - name: Install dependencies
       run: |
         git clone --depth=1 https://github.com/systopia/de.systopia.remotetools.git ../de.systopia.remotetools &&
-        composer update --no-progress --prefer-dist --${{ matrix.prefer }} &&
+        composer update --no-progress --prefer-dist --${{ matrix.prefer }} --optimize-autoloader &&
         composer composer-phpunit -- update --no-progress --prefer-dist &&
         composer composer-phpstan -- update --no-progress --prefer-dist --optimize-autoloader &&
-        composer --working-dir=ci update --no-progress --prefer-dist --${{ matrix.prefer }} --optimize-autoloader --ignore-platform-req=ext-gd
+        composer --working-dir=ci update --no-progress --prefer-dist --${{ matrix.prefer }} --ignore-platform-req=ext-gd
 
     - name: Run PHPStan
       run: composer phpstan -- analyse -c phpstan.ci.neon

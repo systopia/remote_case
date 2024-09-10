@@ -5,7 +5,7 @@ parameters:
 		- remote_case.php
 	excludePaths:
 		analyse:
-			- CRM/Remotecase/DAO/*
+			- CRM/RemoteCase/DAO/*
 			- tests/phpunit/bootstrap.php
 	scanFiles:
 		- remote_case.civix.php
@@ -19,6 +19,8 @@ parameters:
 	level: 9
 	universalObjectCratesClasses:
 		- Civi\Core\Event\GenericHookEvent
+		- CRM_Core_Config
+		- CRM_Core_DAO
 	checkTooWideReturnTypesInProtectedAndPublicMethods: true
 	checkUninitializedProperties: true
 	checkMissingCallableSignature: true
