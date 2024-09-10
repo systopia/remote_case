@@ -9,6 +9,19 @@ if [ ! -e tools/phpunit/vendor/bin ]; then
   "$SCRIPT_DIR/docker-prepare.sh"
 fi
 
+# CIVICRM_SMARTY_AUTOLOAD_PATH is not set in the container's civicrm.settings.php so we have to do it here.
+# Otherwise this results in this error:
+# Fatal error: Cannot declare class Smarty, because the name is already in use in /var/www/html/sites/all/modules/civicrm/packages/smarty5/Smarty.php on line 4
+# With CiviCRM 5.75 this would result in this error: Plugin tag 'localize' already registered
+if ! cv vars:show --out=shell | grep -q "^CIVI_VERSION='5\.75\."; then
+  smarty=$(printf '%s\n' /var/www/html/sites/all/modules/civicrm/packages/smarty* | sort -r | head -n1)
+  if [ -e "$smarty/Smarty.php" ]; then
+    export CIVICRM_SMARTY_AUTOLOAD_PATH="$smarty/Smarty.php"
+  elif [ -e "$smarty/vendor/autoload.php" ]; then
+    export CIVICRM_SMARTY_AUTOLOAD_PATH="$smarty/vendor/autoload.php"
+  fi
+fi
+
 export XDEBUG_MODE=coverage
 # TODO: Remove when not needed, anymore.
 # In Docker container with CiviCRM 5.5? all deprecations are reported as direct

@@ -35,18 +35,24 @@ else
   # The autoloader expected class "Civi\ActionSchedule\Mapping" to be defined in
   # file "[...]/Civi/ActionSchedule/Mapping.php". The file was found but the
   # class was not in it, the class name or namespace probably has a typo.
-  rm -f /var/www/html/sites/all/modules/civicrm/Civi/ActionSchedule/Mapping.php
+  #
+  # Necessary for CiviCRM 5.66.0 - 5.74.x.
+  # https://github.com/civicrm/civicrm-core/blob/5.66.0/Civi/ActionSchedule/Mapping.php
+  if [ -e /var/www/html/sites/all/modules/civicrm/Civi/ActionSchedule/Mapping.php ] \
+      && grep -q '// Empty file' /var/www/html/sites/all/modules/civicrm/Civi/ActionSchedule/Mapping.php; then
+    rm /var/www/html/sites/all/modules/civicrm/Civi/ActionSchedule/Mapping.php
+  fi
 
   cv ext:download "de.systopia.xcm@https://github.com/systopia/de.systopia.xcm/releases/download/$XCM_VERSION/de.systopia.xcm-$XCM_VERSION.zip"
   cv ext:download "de.systopia.identitytracker@https://github.com/systopia/de.systopia.identitytracker/archive/refs/heads/$IDENTITYTRACKER_BRANCH.zip"
   cv ext:download "de.systopia.remotetools@https://github.com/systopia/de.systopia.remotetools/archive/refs/heads/$REMOTETOOLS_BRANCH.zip"
   composer --working-dir="$EXT_DIR/../de.systopia.remotetools" update --no-dev --no-progress --prefer-dist --optimize-autoloader
 
-  cv ext:enable "$EXT_NAME"
-
   # For headless tests these files need to exist.
   touch /var/www/html/sites/all/modules/civicrm/sql/test_data.mysql
   touch /var/www/html/sites/all/modules/civicrm/sql/test_data_second_domain.mysql
+
+  cv ext:enable "$EXT_NAME"
 fi
 
 cd "$EXT_DIR"

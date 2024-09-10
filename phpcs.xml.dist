@@ -7,7 +7,7 @@
     <file>tests</file>
     <file>remote_case.php</file>
 
-    <exclude-pattern>/CRM/Remotecase/DAO/.*\.php$</exclude-pattern>
+    <exclude-pattern>/CRM/RemoteCase/DAO/.*\.php$</exclude-pattern>
 
     <arg name="extensions" value="php"/>
     <arg name="cache" value=".phpcs.cache"/>
