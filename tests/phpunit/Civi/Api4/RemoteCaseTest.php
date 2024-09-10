@@ -26,7 +26,7 @@ use Civi\RemoteCase\Fixtures\ContactFixture;
 
 /**
  * @covers \Civi\Api4\RemoteCase
- * @covers \Civi\RemoteCase\RemoteCaseDefaultEntityProfile
+ * @covers \Civi\RemoteCase\RemoteCaseTestEntityProfile
  *
  * @group headless
  */
@@ -36,7 +36,7 @@ final class RemoteCaseTest extends AbstractRemoteCaseHeadlessTestCase {
     $contact = ContactFixture::addIndividual();
     $case = CaseFixture::addFixture($contact['id']);
     $result = RemoteCase::delete()
-      ->setProfile('default')
+      ->setProfile('test')
       ->addWhere('id', '=', $case['id'])
       ->execute();
 
@@ -45,7 +45,7 @@ final class RemoteCaseTest extends AbstractRemoteCaseHeadlessTestCase {
 
   public function testGet(): void {
     $result = RemoteCase::get()
-      ->setProfile('default')
+      ->setProfile('test')
       ->execute();
 
     static::assertCount(0, $result);
@@ -53,7 +53,7 @@ final class RemoteCaseTest extends AbstractRemoteCaseHeadlessTestCase {
     $contact = ContactFixture::addIndividual();
     $case = CaseFixture::addFixture($contact['id']);
     $result = RemoteCase::get()
-      ->setProfile('default')
+      ->setProfile('test')
       ->addSelect('*', 'CAN_delete', 'CAN_update')
       ->execute();
 
@@ -63,7 +63,7 @@ final class RemoteCaseTest extends AbstractRemoteCaseHeadlessTestCase {
     static::assertFalse($result->single()['CAN_update']);
 
     $result = RemoteCase::get()
-      ->setProfile('default')
+      ->setProfile('test')
       ->addWhere('id', '!=', $case['id'])
       ->execute();
 
@@ -79,13 +79,13 @@ final class RemoteCaseTest extends AbstractRemoteCaseHeadlessTestCase {
   public function testGetCreateForm(): void {
     $this->expectException(UnauthorizedException::class);
     RemoteCase::getCreateForm()
-      ->setProfile('default')
+      ->setProfile('test')
       ->execute();
   }
 
   public function testGetFields(): void {
     $result = RemoteCase::getFields()
-      ->setProfile('default')
+      ->setProfile('test')
       ->addSelect('*', 'CAN_delete', 'CAN_update')
       ->execute();
 
@@ -100,7 +100,7 @@ final class RemoteCaseTest extends AbstractRemoteCaseHeadlessTestCase {
     $case = CaseFixture::addFixture($contact['id']);
     $this->expectException(UnauthorizedException::class);
     RemoteCase::getUpdateForm()
-      ->setProfile('default')
+      ->setProfile('test')
       ->setId($case['id'])
       ->execute();
   }

@@ -21,9 +21,9 @@ namespace Civi\RemoteCase;
 
 use Civi\RemoteTools\EntityProfile\ReadOnlyRemoteEntityProfile;
 
-final class RemoteCaseDefaultEntityProfile extends ReadOnlyRemoteEntityProfile {
+final class RemoteCaseTestEntityProfile extends ReadOnlyRemoteEntityProfile {
 
-  public const NAME = 'default';
+  public const NAME = 'test';
 
   public const ENTITY_NAME = 'Case';
 

@@ -6,10 +6,8 @@ require_once 'remote_case.civix.php';
 // phpcs:enable
 
 use Civi\RemoteCase\Api4\Permissions;
-use Civi\RemoteCase\RemoteCaseDefaultEntityProfile;
-use Civi\RemoteTools\EntityProfile\ReadOnlyRemoteEntityProfile;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use CRM_RemoteCase_ExtensionUtil as E;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
  * Implements hook_civicrm_config().
@@ -24,9 +22,8 @@ function remote_case_civicrm_config(\CRM_Core_Config $config): void {
  * Implements hook_civicrm_container().
  */
 function remote_case_civicrm_container(ContainerBuilder $container): void {
-  if (class_exists(ReadOnlyRemoteEntityProfile::class)) {
-    $container->autowire(RemoteCaseDefaultEntityProfile::class)
-      ->addTag(RemoteCaseDefaultEntityProfile::SERVICE_TAG);
+  if (function_exists('_remote_case_test_civicrm_container')) {
+    _remote_case_test_civicrm_container($container);
   }
 }
 
