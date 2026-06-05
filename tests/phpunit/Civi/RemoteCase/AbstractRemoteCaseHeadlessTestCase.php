@@ -40,9 +40,7 @@ abstract class AbstractRemoteCaseHeadlessTestCase extends TestCase implements He
 
   protected function setUp(): void {
     parent::setUp();
-    // @phpstan-ignore-next-line
     \CRM_Core_Config::singleton()->userFrameworkBaseURL = 'http://localhost/';
-    // @phpstan-ignore-next-line
     \CRM_Core_Config::singleton()->cleanURL = 1;
     $this->setUserPermissions([Permissions::ACCESS_REMOTE_CASE]);
   }

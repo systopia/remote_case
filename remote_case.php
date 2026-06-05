@@ -30,7 +30,13 @@ function remote_case_civicrm_container(ContainerBuilder $container): void {
 /**
  * Implements hook_civicrm_permission().
  *
- * @phpstan-param array<string, string|array{string, string}> $permissions
+ * @phpstan-param array<string, array{
+ *    label: string,
+ *    description?: string,
+ *    disabled?: bool,
+ *    implies?: list<string>,
+ *    implied_by?: list<string>,
+ *  }> $permissions
  */
 function remote_case_civicrm_permission(array &$permissions): void {
   $permissions[Permissions::ACCESS_REMOTE_CASE] = [

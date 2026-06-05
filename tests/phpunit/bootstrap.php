@@ -11,21 +11,6 @@ if (file_exists(__DIR__ . '/bootstrap.local.php')) {
   require_once __DIR__ . '/bootstrap.local.php';
 }
 
-/*
- * The return value of this function call is used in the strftime()
- * implementation used in CiviCRM. If it is 'C' this results in this error:
- * datefmt_create: invalid locale: U_ILLEGAL_ARGUMENT_ERROR
- *
- * Patch applied by CiviCRM containing strftime():
- * https://patch-diff.githubusercontent.com/raw/pear/Log/pull/23.patch
- *
- * https://lab.civicrm.org/dev/core/-/issues/4739
- * Fixed in 5.67.0 https://github.com/civicrm/civicrm-core/pull/27981
- */
-if ('C' === setlocale(LC_TIME, '0')) {
-  setlocale(LC_TIME, 'en_US.UTF-8');
-}
-
 // phpcs:disable Drupal.Functions.DiscouragedFunctions.Discouraged
 eval(cv('php:boot --level=classloader', 'phpcode'));
 // phpcs:enable
@@ -34,13 +19,15 @@ if (file_exists(__DIR__ . '/../../vendor/autoload.php')) {
   require_once __DIR__ . '/../../vendor/autoload.php';
 }
 
-// Make CRM_Remotecase_ExtensionUtil available.
+// Make CRM_RemoteCase_ExtensionUtil available.
 require_once __DIR__ . '/../../remote_case.civix.php';
 
 // phpcs:disable PSR1.Files.SideEffects
 
 // Add test classes to class loader.
 addExtensionDirToClassLoader(__DIR__);
+
+// Add classes for tests without booted CiviCRM environment, i.e. simple PHPUnit tests.
 addExtensionToClassLoader('remote_case');
 
 if (!function_exists('ts')) {
@@ -58,7 +45,26 @@ function _remote_case_test_civicrm_container(ContainerBuilder $container): void 
 }
 
 function addExtensionToClassLoader(string $extension): void {
-  addExtensionDirToClassLoader(__DIR__ . '/../../../' . $extension);
+  // Support symlinks. Current working dir should be the extensions' directory
+  // relative to the "ext" directory.
+  // Note: getcwd() is not used because it returns the real path.
+  /** @var string $currentWorkingDir */
+  $currentWorkingDir = getenv('PWD');
+  $candidates = [
+    dirname($currentWorkingDir) . '/' . $extension,
+    __DIR__ . '/../../../' . $extension,
+  ];
+
+  foreach ($candidates as $candidate) {
+    $real = realpath($candidate);
+    if ($real !== FALSE && is_dir($real)) {
+      addExtensionDirToClassLoader($real);
+
+      return;
+    }
+  }
+
+  throw new RuntimeException("Extension path not found for: $extension");
 }
 
 function addExtensionDirToClassLoader(string $extensionDir): void {
@@ -81,6 +87,7 @@ function addExtensionDirToClassLoader(string $extensionDir): void {
  *   The rest of the command to send.
  * @param string $decode
  *   Ex: 'json' or 'phpcode'.
+ *
  * @return mixed
  *   Response output (if the command executed normally).
  *   For 'raw' or 'phpcode', this will be a string. For 'json', it could be any JSON value.
@@ -103,7 +110,7 @@ function cv(string $cmd, string $decode = 'json') {
   $result = stream_get_contents($pipes[1]);
   fclose($pipes[1]);
   if (proc_close($process) !== 0) {
-    throw new RuntimeException("Command failed ($cmd):\n$result");
+    throw new \RuntimeException("Command failed ($cmd):\n$result");
   }
   switch ($decode) {
     case 'raw':
@@ -112,14 +119,15 @@ function cv(string $cmd, string $decode = 'json') {
     case 'phpcode':
       // If the last output is /*PHPCODE*/, then we managed to complete execution.
       if (substr(trim($result), 0, 12) !== '/*BEGINPHP*/' || substr(trim($result), -10) !== '/*ENDPHP*/') {
-        throw new RuntimeException("Command failed ($cmd):\n$result");
+        throw new \RuntimeException("Command failed ($cmd):\n$result");
       }
+
       return $result;
 
     case 'json':
       return json_decode($result, TRUE);
 
     default:
-      throw new RuntimeException("Bad decoder format ($decode)");
+      throw new \RuntimeException("Bad decoder format ($decode)");
   }
 }
