@@ -86,7 +86,6 @@ final class RemoteCaseTest extends AbstractRemoteCaseHeadlessTestCase {
   public function testGetFields(): void {
     $result = RemoteCase::getFields()
       ->setProfile('test')
-      ->addSelect('*', 'CAN_delete', 'CAN_update')
       ->execute();
 
     $fields = $result->indexBy('name')->getArrayCopy();
